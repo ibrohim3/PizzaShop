@@ -5,6 +5,9 @@
   padding: 15px 80px;
   position: relative;
 }
+.logo {
+  font-size: 34px;
+}
 .nav {
   display: flex;
   gap: 20px;

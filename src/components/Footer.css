@@ -12,9 +12,15 @@
 }
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  gap: 130px;
   flex-wrap: wrap;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  gap: 100px;
 }
 .footer-section {
   min-width: 120px;
