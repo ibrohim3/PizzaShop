@@ -1,0 +1,14 @@
+body {
+  background: linear-gradient(
+    245.71deg,
+    #1c0c00 4.96%,
+    #1c0700 33.7%,
+    #140900 68.41%,
+    #1c0c00 96.42%
+  );
+  font-family: 'Poppins', sans-serif;
+  /* padding: 30px 80px; */
+}
+html {
+  scroll-behavior: smooth;
+}

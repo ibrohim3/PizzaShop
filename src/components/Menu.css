@@ -1,0 +1,226 @@
+.menu-section {
+  padding: 10px 80px;
+}
+.menu-text {
+  font-weight: 800;
+  font-size: 70px;
+  color: #ffffff;
+  text-align: center;
+}
+.categories {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.categories .category-btn {
+  padding: 12px 28px;
+  width: 230px;
+  height: 62px;
+  border-radius: 100px;
+  border: none;
+  background: #210a01;
+  box-shadow: 0px 9px 40px 0px #ff6b000f;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  padding: 12px 28px;
+}
+.category-btn:hover {
+  transform: scale(1.05);
+}
+.category-btn.active,
+.size-btn.active {
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(261.69deg, #ff5924 12.12%, #ffa229 86.72%);
+  background-size: 200% 200%;
+  box-shadow: 0px 9px 40px 0px #ff6b000f;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card .pizza-img {
+  margin-top: -20px;
+}
+.product-card h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 26px;
+  color: #ffffff;
+}
+.product-card {
+  width: 297px;
+  min-height: 460px;
+  border-radius: 29.53px;
+  background: #210a01;
+}
+.product-card .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 25px 10px 25px;
+}
+.product-card .info {
+  font-weight: 400;
+  font-size: 14.32px;
+  line-height: 110%;
+  color: #a3a3a3;
+}
+.sizes {
+  display: flex;
+  gap: 25px;
+}
+.size-btn {
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #a3a3a3;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 14.32px;
+  color: #a3a3a3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.price-cont {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.price-cont .price {
+  font-weight: 500;
+  font-size: 25px;
+  color: #ffffff;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.counter button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #a3a3a3;
+  font-weight: 400;
+  font-size: 17px;
+  color: #a3a3a3;
+  cursor: pointer;
+}
+.counter span {
+  font-weight: 400;
+  font-size: 22px;
+  color: #a3a3a3;
+}
+.counter button:hover {
+  background: linear-gradient(261.69deg, #ff5924 12.12%, #ffa229 86.72%);
+  border: none;
+}
+.cart-btn {
+  width: 194px;
+  height: 45px;
+  box-shadow: 0px 7.59px 33.75px 0px #ff6b000f;
+}
+.banner {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 20px 0;
+}
+.banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+@media (max-width: 428px) {
+  .menu-section {
+    padding: 10px 15px;
+  }
+  .menu-text {
+    font-size: 48px;
+    margin: 10px 0;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .categories .category-btn {
+    width: auto;
+    height: auto;
+    padding: 12px 24px !important;
+    font-size: 13px;
+  }
+  .product-card {
+    width: 180px;
+    min-height: 315px;
+    margin: 20px 0;
+  }
+  .pizza-img img {
+    width: 110px;
+    height: 107px;
+  }
+  .product-card h2 {
+    font-size: 16px;
+  }
+  .menu-section .info {
+    width: 140px;
+    font-size: 9px;
+  }
+  .size-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 9px;
+    margin: 10px 0 5px 0;
+  }
+  .price-cont .price {
+    font-size: 16px;
+  }
+  .counter button {
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .counter span {
+    width: 8px;
+    font-size: 16px;
+  }
+  .cart-btn {
+    width: 118px;
+    height: 30px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: start;
+  }
+  .banner img {
+    max-width: 100%;
+    height: 140px;
+  }
+}

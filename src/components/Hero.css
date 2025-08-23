@@ -1,0 +1,135 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 0;
+  flex-wrap: wrap-reverse;
+  padding: 20px 80px;
+}
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  max-width: 620px;
+  margin-left: 100px;
+}
+.images img {
+  max-width: 100%;
+  height: auto;
+}
+.images .mini-pizza {
+  position: absolute;
+  top: -90px;
+  left: 340px;
+}
+.images .fries {
+  position: absolute;
+  bottom: -70px;
+  right: 360px;
+}
+.hero .main-text {
+  max-width: 540px;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 110%;
+  color: #ffffff;
+  margin: 0;
+}
+.hero .desc {
+  max-width: 430px;
+  font-weight: 400;
+  font-size: 19px;
+  color: #a3a3a3;
+  margin: 15px 0;
+}
+.hero span {
+  color: #ffffff;
+  cursor: pointer;
+}
+.cooking {
+  display: flex;
+  flex-direction: column;
+}
+.video {
+  border-radius: 24px;
+  margin: 0;
+}
+.order-btns {
+  position: relative;
+  margin-top: 30px;
+}
+.order-btn {
+  width: 225px;
+  height: 55px;
+  position: absolute;
+  z-index: 999;
+}
+.menu-btn {
+  width: 248px;
+  height: 55px;
+  padding-left: 100px;
+  border-radius: 100px;
+  border: 2px solid #ffa631;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ff6432;
+  cursor: pointer;
+  position: absolute;
+  right: 180px;
+}
+@media (max-width: 428px) {
+  .hero {
+    align-items: center;
+    margin: 30px 0;
+    padding: 10px 20px;
+  }
+  .images {
+    max-width: 100%;
+    margin: 40px 0;
+    padding: 10px 20px;
+  }
+  .images .mini-pizza {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(15%);
+  }
+  .images .fries {
+    position: absolute;
+    bottom: -30px;
+    right: 50%;
+    transform: translateX(-30%);
+  }
+  .hero .main-text {
+    width: 100%;
+    font-size: 46px;
+    line-height: 110%;
+  }
+  .hero .desc {
+    font-size: 14px;
+  }
+  .cooking {
+    flex-direction: column-reverse;
+  }
+  .video {
+    width: 220px;
+    height: 150px;
+  }
+  .order-btns {
+    margin-bottom: 80px;
+  }
+  .order-btn,
+  .menu-btn {
+    width: 164px;
+    height: 44px;
+    font-size: 15px;
+  }
+  .menu-btn {
+    padding-left: 45px;
+    right: 80px;
+    text-align: center;
+  }
+}

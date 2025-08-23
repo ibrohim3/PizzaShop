@@ -1,0 +1,18 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+.about h2 {
+  font-weight: 800;
+  font-size: 69px;
+  color: #ffffff;
+  margin: 0;
+}
+.about p {
+  width: 460px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  color: #A3A3A3;
+}
