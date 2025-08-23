@@ -9,8 +9,8 @@
 }
 .gradient-text {
   background: linear-gradient(261.69deg, #ff6432 12.12%, #ffa228 86.72%);
-  --webkit-background-clip: text;
-  --webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-size: 200% 200%;
   animation: gradientMove 4s ease infinite;
 }
@@ -63,6 +63,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  backdrop-filter: blur(10px);
 }
 .cart-content {
   background: #fff;

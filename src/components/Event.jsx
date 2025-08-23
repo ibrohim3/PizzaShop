@@ -12,7 +12,7 @@ function Event() {
   return (
     <section className="event-section" id='events'>
       <div className="event-grid">
-        {/* yuqoridagi 3ta kichkina */}
+        {/*  3ta kichkina */}
         <div className="small2">
           <div className="small" style={{ backgroundImage: `url(${card1})` }}>
             <p>HOW WE COOKING</p>
@@ -31,7 +31,7 @@ function Event() {
           </div>
         </div>
 
-        {/* o‘rtadagi 2ta katta yonma-yon */}
+        {/*  2ta katta  */}
         <div className="large2">
           <div className="large" style={{ backgroundImage: `url(${card3})` }}>
             <p>TWO PIZZA FOR 1 PRICE</p>
@@ -43,7 +43,7 @@ function Event() {
           </div>
         </div>
 
-        {/* pastdagi 3ta kichkina */}
+        {/*  3ta kichkina */}
         <div className="small2">
           <div className="small" style={{ backgroundImage: `url(${card5})` }}>
             <p>FREE COFFEE FOR 3 PIZZA </p>

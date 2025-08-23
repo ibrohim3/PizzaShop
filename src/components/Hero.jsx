@@ -8,7 +8,7 @@ function Hero() {
   const [play, setPlay] = useState(false);
 
   return (
-    <main className="hero">
+    <main className="hero" id='hero'>
       <div className="info">
         <h1 className="main-text">The Fastest Pizza Delivery</h1>
         <p className="desc">

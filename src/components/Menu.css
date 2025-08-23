@@ -170,9 +170,9 @@
     font-size: 13px;
   }
   .product-card {
-    width: 180px;
+    width: 175px;
     min-height: 315px;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
   }
   .pizza-img img {
     width: 110px;

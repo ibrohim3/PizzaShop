@@ -5,13 +5,13 @@ import { FaInstagram, FaTwitter, FaFacebookF } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-      <footer className="footer">
-        <div className="footer-container">
-          {/* Logo */}
-          <div className="footer-section">
-            <h2 className="footer-logo gradient-text">pizzashop</h2>
-          </div>
-
+    <footer className="footer">
+      <div className="footer-container">
+        {/* Logo */}
+        <div className="footer-section">
+          <h2 className="footer-logo gradient-text">pizzashop</h2>
+        </div>
+        <div className='links'>
           {/* Home */}
           <div className="footer-section">
             <h4>Home</h4>
@@ -45,17 +45,18 @@ const Footer = () => {
             <p>Why We?</p>
           </div>
         </div>
+      </div>
 
-        {/* Bottom Row */}
-        <div className="footer-bottom">
-          <span className="footer-phone gradient-text">+7 (937) 333-55-33</span>
-          <div className="footer-socials gradient-text">
-            <FaInstagram />
-            <FaTwitter />
-            <FaFacebookF />
-          </div>
+      {/* Bottom Row */}
+      <div className="footer-bottom">
+        <span className="footer-phone gradient-text">+7 (937) 333-55-33</span>
+        <div className="footer-socials ">
+          <FaInstagram />
+          <FaTwitter />
+          <FaFacebookF />
         </div>
-      </footer>
+      </div>
+    </footer>
   );
 };
 

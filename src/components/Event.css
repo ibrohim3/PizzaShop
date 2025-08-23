@@ -42,15 +42,14 @@
   width: 204px;
   height: 38;
 }
-.other{
+.other {
   padding: 0;
   margin: 0;
-
 }
 .event-grid h2 {
   font-weight: 800;
   font-size: 68px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: end;
 }
 .event-grid .info {
@@ -61,13 +60,57 @@
   color: #a3a3a3;
   margin: 0;
 }
-@media (max-width: 768px) {
-  .event-grid {
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 428px) {
+  .event-section {
+    padding: 10px 20px;
   }
-}
-@media (max-width: 480px) {
-  .event-grid {
-    grid-template-columns: 1fr;
+  .small.other {
+    order: -1;
+    text-align: end;
+    margin-bottom: -20px;
+  }
+  .small,
+  .large {
+    width: 100%;
+    min-height: 160px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+  .small2,
+  .large2 {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .small {
+    min-width: 290px;
+    max-height: 90px;
+    margin: 5px 0 !important;
+  }
+  .large {
+    min-width: 390px;
+    max-height: 90px;
+    margin: 5px 0;
+  }
+  .event-grid h2 {
+    font-size: 48px;
+    margin: 0;
+  }
+  .event-grid .info {
+    font-size: 14px;
+    margin: -40px 0 -20px 0;
+  }
+  .event-grid p {
+    width: 105px;
+    font-size: 16px;
+  }
+  .event-grid .more-btn {
+    width: 128px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
   }
 }

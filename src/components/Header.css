@@ -1,40 +1,99 @@
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 20px 80px;
-}
-.logo {
-  margin: 0;
-  font-weight: 800;
-  font-size: 34.06px;
+  align-items: center;
+  padding: 15px 80px;
+  position: relative;
 }
 .nav {
   display: flex;
-  align-items: center;
-  gap: 40px;
-  margin: 0;
-  margin-right: 30px;
+  gap: 20px;
 }
-.nav a {
-  font-weight: 400;
-  font-size: 17.88px;
-  color: #a3a3a3;
-}
-.btns {
+.nav ul {
   display: flex;
   gap: 20px;
 }
-.btns .logn-btn {
-  width: 163px;
+.nav ul a {
+  font-size: 18px;
+  color: #a3a3a3;
+  transition: 0.3s ease;
+}
+.nav ul a:hover {
+  color: #ff6432;
+}
+.bars {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .cart-icon {
-  width: 42px;
-  height: 42px;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background: red;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 8px;
   border-radius: 50%;
-  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
-  cursor: pointer;
+}
+/* Mobile */
+@media (max-width: 428px) {
+  .header {
+    padding: 10px 20px;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(
+      245.71deg,
+      #170a00 4.96%,
+      #170600 33.7%,
+      #0f0700 68.41%,
+      #170a00 96.42%
+    );
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.8s ease-in-out;
+    z-index: 1001;
+  }
+  .logn-btn {
+    display: none;
+  }
+  .nav.open {
+    right: 0;
+  }
+  .nav ul {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .bars {
+    display: block;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
 }

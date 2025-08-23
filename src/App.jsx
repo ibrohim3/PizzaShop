@@ -15,12 +15,12 @@ function App() {
 
   return (
     <div className="container">
-      {/* <Header cart={cart} toggleCart={toggleCart} /> */}
-      {/* <Hero /> */}
+      <Header cart={cart} toggleCart={toggleCart} />
+      <Hero />
       <Menu cart={cart} setCart={setCart} />
-      {/* <Event/> */}
-      {/* <About/> */}
-      {/* <Footer/> */}
+      <Event/>
+      <About />
+      <Footer/>
       {isCartOpen && (
         <div className="cart-modal">
           <div className="cart-content">
@@ -32,14 +32,18 @@ function App() {
                 {cart.map((item) => (
                   <div key={item.id + item.size} className="cart-item">
                     <img src={item.img} alt="" />
-                    <p>{item.name} ({item.size} cm)</p>
+                    <p>
+                      {item.name} ({item.size} cm)
+                    </p>
                     <p>Qty: {item.count}</p>
                     <p>Total: ${item.total}</p>
                   </div>
                 ))}
                 <h3>
                   Grand Total: $
-                  {cart.reduce((acc, item) => acc + parseFloat(item.total), 0).toFixed(2)}
+                  {cart
+                    .reduce((acc, item) => acc + parseFloat(item.total), 0)
+                    .toFixed(2)}
                 </h3>
               </>
             )}
