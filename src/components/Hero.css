@@ -12,7 +12,7 @@
   align-items: center;
   position: relative;
   flex: 1;
-  max-width: 620px;
+  max-width: 580px;
   margin-left: 100px;
 }
 .images img {
@@ -20,14 +20,16 @@
   height: auto;
 }
 .images .mini-pizza {
+  width: 50%;
   position: absolute;
-  top: -90px;
+  top: -110px;
   left: 340px;
 }
 .images .fries {
+  width: 100%;
   position: absolute;
-  bottom: -70px;
-  right: 360px;
+  bottom: -50px;
+  right: 90px;
 }
 .hero .main-text {
   max-width: 540px;

@@ -3,7 +3,7 @@
   text-decoration: none;
 }
 .container {
-  max-width: 100%;
+  max-width: 1540px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
